@@ -13,6 +13,8 @@ RUN npm install
 # RUN npm ci --only=production
 
 # Bundle app source
+COPY ./start.sh /usr/src/app/start.sh
+RUN chmod +x /usr/src/app/start.sh
 COPY . .
 
 EXPOSE 10010
