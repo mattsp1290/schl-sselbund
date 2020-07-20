@@ -18,4 +18,4 @@ RUN chmod +x /usr/src/app/start.sh
 COPY . .
 
 EXPOSE 10010
-CMD [ "/usr/src/app/start.sh" ]
+CMD [ "swagger", "project", "start", "schl-sselbund" ]
