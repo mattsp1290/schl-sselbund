@@ -5,8 +5,15 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var sassMiddleware = require('node-sass-middleware');
 
+
+require('dotenv').config();
+
+var isDocker = require('./util/is_docker');
+console.log('Is Docker: ' + isDocker());
+
 var indexRouter = require('./routes/index');
 var objectsRouter = require('./routes/objects');
+
 
 var app = express();
 

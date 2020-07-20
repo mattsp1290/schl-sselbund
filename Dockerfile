@@ -13,6 +13,7 @@ RUN npm install
 # RUN npm ci --only=production
 # Bundle app source
 COPY . .
+RUN mv docker/.dockerenv ./.env
 
 ENV DEBUG=schl-sselbund:*
 EXPOSE 3000

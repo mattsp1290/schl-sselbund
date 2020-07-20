@@ -1,0 +1,4 @@
+IS_DOCKER=true
+DB_USER=key
+DB_HOST=mysql
+DB_DATABASE=schlusselbund
