@@ -8,8 +8,7 @@ var sassMiddleware = require('node-sass-middleware');
 
 require('dotenv').config();
 
-var isDocker = require('./util/is_docker');
-console.log('Is Docker: ' + isDocker());
+require('./util/airtable_base');
 
 var indexRouter = require('./routes/index');
 var objectsRouter = require('./routes/objects');
